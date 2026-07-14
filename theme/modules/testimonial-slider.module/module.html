@@ -1,0 +1,39 @@
+<section class="testimonials">
+  <div class="wrap">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">{{ module.eyebrow }}</span>
+      <h2>{{ module.heading }}</h2>
+    </div>
+
+    <div class="testimonials__slider-wrap" data-aos="fade-up">
+      <div class="swiper testimonial-slider">
+        <div class="swiper-wrapper">
+          {% for item in module.testimonials %}
+            <div class="swiper-slide">
+              <blockquote class="testimonial-card">
+                <p class="testimonial-card__quote">&ldquo;{{ item.quote }}&rdquo;</p>
+                <footer class="testimonial-card__author">
+                  {% if item.avatar.src %}
+                    <img src="{{ item.avatar.src }}" alt="{{ item.name }}" loading="lazy">
+                  {% endif %}
+                  <div>
+                    <cite>{{ item.name }}</cite>
+                    <span>{{ item.role }}</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <button class="testimonial-arrow testimonial-arrow--prev" data-testimonial-prev aria-label="Previous testimonial">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12.5 4L7 10L12.5 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="testimonial-arrow testimonial-arrow--next" data-testimonial-next aria-label="Next testimonial">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 4L13 10L7.5 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</section>

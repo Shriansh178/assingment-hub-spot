@@ -1,0 +1,12 @@
+{
+  "label": "Accordion",
+  "css_assets": [],
+  "js_assets": [],
+  "global": false,
+  "help_text": "Accordion with smooth height animation. First item is open by default.",
+  "host_template_types": [
+    "PAGE"
+  ],
+  "icon": "list",
+  "is_available_for_new_content": true
+}

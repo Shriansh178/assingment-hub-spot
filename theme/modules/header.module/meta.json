@@ -1,0 +1,14 @@
+{
+  "label": "Site Header",
+  "css_assets": [],
+  "js_assets": [],
+  "global": false,
+  "help_text": "Primary site navigation with logo, menu, one dropdown submenu, and CTA.",
+  "host_template_types": [
+    "PAGE",
+    "BLOG_LISTING",
+    "BLOG_POST"
+  ],
+  "icon": "layout",
+  "is_available_for_new_content": true
+}

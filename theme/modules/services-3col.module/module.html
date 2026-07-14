@@ -1,0 +1,28 @@
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">{{ module.eyebrow }}</span>
+      <h2>{{ module.heading }}</h2>
+      <p>{{ module.description }}</p>
+    </div>
+
+    <div class="services__grid">
+      {% for card in module.service_cards %}
+        <article class="service-card" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 80 }}">
+          <div class="service-card__media">
+            {% if card.image.src %}
+              <img src="{{ card.image.src }}" alt="{{ card.image.alt }}" loading="lazy">
+            {% endif %}
+          </div>
+
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+
+          {% if card.category %}
+            <span class="service-card__tag">{{ card.category }}</span>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

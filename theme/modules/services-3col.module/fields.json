@@ -1,0 +1,162 @@
+[
+  {
+    "id": "cce931e7-144c-40d7-a537-365168d6733b",
+    "name": "eyebrow",
+    "label": "Eyebrow label",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "What we do"
+  },
+  {
+    "id": "a7a446ec-7a06-493a-8bd7-c59e03c6d5f5",
+    "name": "heading",
+    "label": "Heading",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Services built around outcomes"
+  },
+  {
+    "id": "067a7164-fb78-4633-8cc9-5222608c95ed",
+    "name": "description",
+    "label": "Description",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "From strategy to shipped product, our team covers the full build."
+  },
+  {
+    "id": "80c5e697-a4c6-4349-b8ab-779ae564946f",
+    "name": "use_hubdb",
+    "label": "Pull cards from HubDB",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "inline_help_text": "",
+    "help_text": "",
+    "display": "toggle",
+    "default": true
+  },
+  {
+    "id": "0d3ec5e9-3100-4f96-8527-3ab32abf0a9e",
+    "name": "hubdb_table_id",
+    "label": "HubDB table (Services)",
+    "required": false,
+    "locked": false,
+    "type": "hubdbtable",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": null
+  },
+  {
+    "id": "971a14ff-2033-4689-bae0-51445fe8650c",
+    "name": "category_filter",
+    "label": "Filter by category (optional, matches HubDB Category column)",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": ""
+  },
+  {
+    "id": "9b16499d-ad76-4fce-8875-c08fbd6e027a",
+    "name": "service_cards",
+    "label": "Manual cards (used when HubDB is off, or as fallback)",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": {
+      "min": 0,
+      "max": 6,
+      "default": 3,
+      "sorting_label_field": null
+    },
+    "inline_help_text": "",
+    "help_text": "",
+    "children": [
+      {
+        "id": "d6a256f2-4627-4aed-9535-8bc718023aa0",
+        "name": "image",
+        "label": "Image",
+        "required": false,
+        "locked": false,
+        "type": "image",
+        "inline_help_text": "",
+        "help_text": "",
+        "responsive": true,
+        "default": {
+          "size_type": "auto",
+          "src": "",
+          "alt": "",
+          "loading": "lazy",
+          "width": null,
+          "height": null,
+          "max_width": null,
+          "max_height": null
+        }
+      },
+      {
+        "id": "a7473966-5ec7-4237-b57e-220517f54d95",
+        "name": "title",
+        "label": "Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Service title"
+      },
+      {
+        "id": "8f72a587-93e5-4515-bd40-edb3462baa51",
+        "name": "description",
+        "label": "Description",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Short description of this service offering."
+      }
+    ],
+    "default": [
+      {
+        "title": "Brand & UX Strategy",
+        "description": "Positioning, research and UX architecture before a single pixel is drawn."
+      },
+      {
+        "title": "HubSpot CMS Development",
+        "description": "Modular, editor-friendly websites built for speed and scale."
+      },
+      {
+        "title": "Growth & CRO",
+        "description": "Conversion-focused iteration backed by real user data."
+      }
+    ]
+  }
+]

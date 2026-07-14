@@ -1,0 +1,12 @@
+{
+  "label": "Process Tabs",
+  "css_assets": [],
+  "js_assets": [],
+  "global": false,
+  "help_text": "Four-tab section with smooth animated panel switching.",
+  "host_template_types": [
+    "PAGE"
+  ],
+  "icon": "tab",
+  "is_available_for_new_content": true
+}

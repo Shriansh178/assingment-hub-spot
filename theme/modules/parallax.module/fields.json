@@ -1,0 +1,89 @@
+[
+  {
+    "id": "4775b1dd-23ca-4e95-ad71-eb5bf0e41ea3",
+    "name": "background_image",
+    "label": "Background image",
+    "required": false,
+    "locked": false,
+    "type": "image",
+    "inline_help_text": "",
+    "help_text": "",
+    "responsive": true,
+    "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": "",
+      "loading": "lazy",
+      "width": null,
+      "height": null,
+      "max_width": null,
+      "max_height": null
+    }
+  },
+  {
+    "id": "362febf6-7b61-42ee-b630-3d9800dccfc9",
+    "name": "eyebrow",
+    "label": "Eyebrow label",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Our approach"
+  },
+  {
+    "id": "bde759fe-4633-4d79-b481-c2fa43e1f60b",
+    "name": "heading",
+    "label": "Heading",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "We build for the long run, not the launch date"
+  },
+  {
+    "id": "f9ef6f6c-100d-4ce3-b334-7905fd282ee9",
+    "name": "description",
+    "label": "Description",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Every engagement is scoped around measurable business impact, not just deliverables."
+  },
+  {
+    "id": "58a6cd90-35a0-4992-85df-05e8ac61382b",
+    "name": "cta_label",
+    "label": "CTA label",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Start a project"
+  },
+  {
+    "id": "6ee9e941-db4b-422f-8eb7-cffae60e0dc1",
+    "name": "cta_link",
+    "label": "CTA link",
+    "required": false,
+    "locked": false,
+    "type": "url",
+    "inline_help_text": "",
+    "help_text": ""
+  }
+]

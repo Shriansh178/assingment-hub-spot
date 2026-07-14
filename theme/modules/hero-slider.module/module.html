@@ -1,0 +1,24 @@
+<section class="hero">
+  <div class="swiper hero-slider">
+    <div class="swiper-wrapper">
+      {% for slide in module.slides %}
+        <div class="swiper-slide hero-slide" style="background-image: linear-gradient(180deg, rgba(11,13,18,0.35), rgba(11,13,18,0.65)), url('{{ slide.background_image.src }}');">
+          <div class="wrap hero-slide__content">
+            <span class="eyebrow" data-aos="fade-up">{{ slide.eyebrow }}</span>
+            <h1 data-aos="fade-up" data-aos-delay="80">{{ slide.heading }}</h1>
+            <p data-aos="fade-up" data-aos-delay="160">{{ slide.description }}</p>
+            {% if slide.cta_label %}
+              <a href="{{ slide.cta_link.url }}" class="btn btn--ghost" data-aos="fade-up" data-aos-delay="240">
+                {{ slide.cta_label }}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <button class="swiper-button-prev hero-nav hero-nav--prev" aria-label="Previous slide"></button>
+    <button class="swiper-button-next hero-nav hero-nav--next" aria-label="Next slide"></button>
+  </div>
+</section>

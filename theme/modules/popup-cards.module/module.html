@@ -1,0 +1,36 @@
+<section class="feature-cards">
+  <div class="wrap">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">{{ module.eyebrow }}</span>
+      <h2>{{ module.heading }}</h2>
+    </div>
+
+    <div class="feature-cards__grid">
+      {% for card in module.cards %}
+        {% set modal_id = "feature-modal-" ~ loop.index %}
+        <article class="feature-card" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 80 }}">
+          <div class="feature-card__icon">
+            {% if card.icon.src %}
+              <img src="{{ card.icon.src }}" alt="" loading="lazy">
+            {% endif %}
+          </div>
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.short_description }}</p>
+          <button class="feature-card__plus" data-modal-trigger="{{ modal_id }}" aria-label="Read more about {{ card.title }}">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M9 1V17M1 9H17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </article>
+
+        <div class="modal" id="{{ modal_id }}" data-modal role="dialog" aria-modal="true" aria-labelledby="{{ modal_id }}-title">
+          <div class="modal__panel">
+            <button class="modal__close" data-modal-close aria-label="Close dialog">&times;</button>
+            <h3 id="{{ modal_id }}-title">{{ card.title }}</h3>
+            <p>{{ card.full_description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

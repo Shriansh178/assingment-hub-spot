@@ -1,0 +1,12 @@
+{
+  "label": "Feature Cards with Popup",
+  "css_assets": [],
+  "js_assets": [],
+  "global": false,
+  "help_text": "Three column cards with a plus icon that opens a modal with extended content. Closes on outside click and Escape key.",
+  "host_template_types": [
+    "PAGE"
+  ],
+  "icon": "plus-circle",
+  "is_available_for_new_content": true
+}

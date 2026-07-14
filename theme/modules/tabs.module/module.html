@@ -1,0 +1,43 @@
+<section class="tabs-section">
+  <div class="wrap">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">{{ module.eyebrow }}</span>
+      <h2>{{ module.heading }}</h2>
+    </div>
+
+    <div class="tabs" data-tabs data-aos="fade-up">
+      <div class="tabs__buttons" role="tablist">
+        {% for tab in module.tabs %}
+          {% set tab_id = "tab-" ~ loop.index %}
+          <button class="tabs__button{% if loop.first %} is-active{% endif %}"
+                  data-tab-button="{{ tab_id }}"
+                  role="tab"
+                  aria-selected="{{ 'true' if loop.first else 'false' }}">
+            {{ tab.tab_label }}
+          </button>
+        {% endfor %}
+      </div>
+
+      <div class="tabs__panels">
+        {% for tab in module.tabs %}
+          {% set tab_id = "tab-" ~ loop.index %}
+          <div class="tabs__panel{% if loop.first %} is-active{% endif %}"
+               data-tab-panel="{{ tab_id }}"
+               role="tabpanel">
+            <div class="tabs__panel-media">
+              {% if tab.image.src %}
+                <img src="{{ tab.image.src }}"
+                     alt="{{ tab.tab_label }}"
+                     loading="lazy">
+              {% endif %}
+            </div>
+            <div class="tabs__panel-copy">
+              <h3>{{ tab.title }}</h3>
+              <p>{{ tab.description }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

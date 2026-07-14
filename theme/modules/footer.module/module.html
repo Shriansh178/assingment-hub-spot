@@ -1,0 +1,34 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div class="site-footer__brand">
+      {% if module.logo.src %}
+        <img src="{{ module.logo.src }}" alt="{{ module.logo_alt_text }}" class="site-footer__logo">
+      {% else %}
+        <span class="site-footer__logo-text">{{ module.logo_alt_text }}</span>
+      {% endif %}
+      <p>{{ module.tagline }}</p>
+    </div>
+
+    <div class="site-footer__col">
+      <h4>Quick Links</h4>
+      <ul>
+        {% for link in module.quick_links %}
+          <li><a href="{{ link.link.url }}">{{ link.nav_label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="site-footer__col">
+      <h4>Contact</h4>
+      <ul class="site-footer__contact">
+        {% if module.email %}<li><a href="mailto:{{ module.email }}">{{ module.email }}</a></li>{% endif %}
+        {% if module.phone %}<li><a href="tel:{{ module.phone }}">{{ module.phone }}</a></li>{% endif %}
+        {% if module.address %}<li>{{ module.address }}</li>{% endif %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap site-footer__bottom">
+    <span>&copy; {{ now|datetimeformat('%Y') }} {{ module.company_name }}. All rights reserved.</span>
+  </div>
+</footer>

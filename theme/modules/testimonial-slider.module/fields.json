@@ -1,0 +1,128 @@
+[
+  {
+    "id": "e2988597-03c8-4bbb-aa98-90814eee3aa0",
+    "name": "eyebrow",
+    "label": "Eyebrow label",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Client feedback"
+  },
+  {
+    "id": "efb94908-b60f-48f4-9758-d9af16049f41",
+    "name": "heading",
+    "label": "Heading",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "What our clients say"
+  },
+  {
+    "id": "11aa3cef-1a6e-4cee-860d-351240d90fbd",
+    "name": "testimonials",
+    "label": "Testimonials",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": {
+      "min": 3,
+      "max": 8,
+      "default": 3,
+      "sorting_label_field": null
+    },
+    "inline_help_text": "",
+    "help_text": "",
+    "children": [
+      {
+        "id": "0d968075-4e44-487b-a002-fa0baa92279c",
+        "name": "quote",
+        "label": "Quote",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "This team completely changed how we think about our website."
+      },
+      {
+        "id": "f27ba046-15fa-4847-b41d-f26b798826af",
+        "name": "client_name",
+        "label": "Name",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Client name"
+      },
+      {
+        "id": "d8b98672-152c-4b63-bebf-913fb636f60b",
+        "name": "role",
+        "label": "Role / Company",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Role, Company"
+      },
+      {
+        "id": "3c591de1-57ef-41df-a409-19ca9fb2b09c",
+        "name": "avatar",
+        "label": "Avatar",
+        "required": false,
+        "locked": false,
+        "type": "image",
+        "inline_help_text": "",
+        "help_text": "",
+        "responsive": true,
+        "default": {
+          "size_type": "auto",
+          "src": "",
+          "alt": "",
+          "loading": "lazy",
+          "width": null,
+          "height": null,
+          "max_width": null,
+          "max_height": null
+        }
+      }
+    ],
+    "default": [
+      {
+        "quote": "This team completely changed how we think about our website.",
+        "name": "Priya Menon",
+        "role": "Head of Marketing, Nova"
+      },
+      {
+        "quote": "Fast, communicative, and genuinely great at HubSpot CMS.",
+        "name": "Daniel Cross",
+        "role": "Founder, Fielo"
+      },
+      {
+        "quote": "The modules they built are still easy for our editors to use today.",
+        "name": "Aiko Tanaka",
+        "role": "Ops Lead, Brightline"
+      }
+    ]
+  }
+]

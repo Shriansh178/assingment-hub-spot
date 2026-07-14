@@ -1,0 +1,28 @@
+.parallax {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11, 13, 18, 0.55), rgba(11, 13, 18, 0.75));
+}
+
+.parallax__content {
+  position: relative;
+  text-align: center;
+  max-width: 620px;
+  color: #fff;
+}
+.parallax__content h2 { color: #fff; font-size: clamp(30px, 4vw, 46px); }
+.parallax__content p { color: rgba(255, 255, 255, 0.82); margin-bottom: 32px; }
+
+@media (max-width: 900px) {
+  .parallax { background-attachment: scroll; }
+}

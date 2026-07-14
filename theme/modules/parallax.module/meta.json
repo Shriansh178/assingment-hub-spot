@@ -1,0 +1,12 @@
+{
+  "label": "Parallax Statement",
+  "css_assets": [],
+  "js_assets": [],
+  "global": false,
+  "help_text": "Full-width CSS parallax background with heading, description and CTA.",
+  "host_template_types": [
+    "PAGE"
+  ],
+  "icon": "layers",
+  "is_available_for_new_content": true
+}

@@ -1,0 +1,133 @@
+[
+  {
+    "id": "cd1b9413-c210-45de-89ce-f56216984d8e",
+    "name": "eyebrow",
+    "label": "Eyebrow label",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "How we work"
+  },
+  {
+    "id": "0f2f146e-4a96-440b-b02c-adb9ea9a2d16",
+    "name": "heading",
+    "label": "Heading",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "A process built around clarity"
+  },
+  {
+    "id": "a4ed6dae-8f4a-4587-b1a0-94aa9d7a41ec",
+    "name": "tabs",
+    "label": "Tabs",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "default": 4,
+      "sorting_label_field": null
+    },
+    "inline_help_text": "",
+    "help_text": "",
+    "children": [
+      {
+        "id": "7a636613-a320-4fe0-9e39-1a79c40be814",
+        "name": "tab_label",
+        "label": "Tab label",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Discover"
+      },
+      {
+        "id": "bb03cc86-5c3a-4701-a371-63b658fdeb17",
+        "name": "title",
+        "label": "Panel title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Panel title"
+      },
+      {
+        "id": "25ded739-35be-4eae-b3aa-779ac1bf0e8a",
+        "name": "description",
+        "label": "Panel description",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Panel description text."
+      },
+      {
+        "id": "bc9e8ee7-2459-4c3e-8e14-7376075325a3",
+        "name": "image",
+        "label": "Panel image",
+        "required": false,
+        "locked": false,
+        "type": "image",
+        "inline_help_text": "",
+        "help_text": "",
+        "responsive": true,
+        "default": {
+          "size_type": "auto",
+          "src": "",
+          "alt": "",
+          "loading": "lazy",
+          "width": null,
+          "height": null,
+          "max_width": null,
+          "max_height": null
+        }
+      }
+    ],
+    "default": [
+  {
+    "tab_label": "Discover",
+    "title": "Discovery & scoping",
+    "description": "We map goals, constraints and success metrics before writing a line of code."
+  },
+  {
+    "tab_label": "Design",
+    "title": "Design systems",
+    "description": "Interfaces designed for both users and the editors who will maintain them."
+  },
+  {
+    "tab_label": "Build",
+    "title": "CMS development",
+    "description": "Modular HubL builds with flexible fields and reusable components."
+  },
+  {
+    "tab_label": "Launch",
+    "title": "Launch & support",
+    "description": "QA, performance passes and a 30-day support window after go-live."
+  }
+]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "label": "Services (HubDB) \u2014 Three Column",
+  "css_assets": [],
+  "js_assets": [],
+  "global": false,
+  "help_text": "Three column service cards. Sourced from the HubDB 'Services' table, with an optional Category filter, falling back to a manual repeater.",
+  "host_template_types": [
+    "PAGE"
+  ],
+  "icon": "grid",
+  "is_available_for_new_content": true
+}

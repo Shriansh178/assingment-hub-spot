@@ -1,0 +1,24 @@
+<section class="accordion-section">
+  <div class="wrap wrap--narrow">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">{{ module.eyebrow }}</span>
+      <h2>{{ module.heading }}</h2>
+    </div>
+
+    <div class="accordion" data-accordion data-aos="fade-up">
+      {% for item in module.items %}
+        <div class="accordion__item{% if loop.first %} is-open{% endif %}" data-accordion-item>
+          <button class="accordion__trigger" data-accordion-trigger aria-expanded="{{ 'true' if loop.first else 'false' }}">
+            <span>{{ item.question }}</span>
+            <svg class="accordion__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 1V15M1 8H15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="accordion__panel" data-accordion-panel>
+            <div class="accordion__panel-inner">{{ item.answer }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

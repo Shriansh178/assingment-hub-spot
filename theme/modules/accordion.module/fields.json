@@ -1,0 +1,91 @@
+[
+  {
+    "id": "d419d2b2-2afb-4d4d-a921-a0f9b41000d0",
+    "name": "eyebrow",
+    "label": "Eyebrow label",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "FAQ"
+  },
+  {
+    "id": "5647a68b-0bd7-4d7d-9147-08640dbabf54",
+    "name": "heading",
+    "label": "Heading",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Questions we get asked often"
+  },
+  {
+    "id": "c66631a9-8902-4b2b-b3b2-05c9870373fc",
+    "name": "items",
+    "label": "Accordion items",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 8,
+      "default": 4,
+      "sorting_label_field": null
+    },
+    "inline_help_text": "",
+    "help_text": "",
+    "children": [
+      {
+        "id": "f1369eca-e9aa-4f1c-8bdb-158c2103d709",
+        "name": "question",
+        "label": "Question",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Accordion question"
+      },
+      {
+        "id": "28b6e3de-ca8d-495c-8419-3b4139d7f659",
+        "name": "answer",
+        "label": "Answer",
+        "required": false,
+        "locked": false,
+        "type": "richtext",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Accordion answer content."
+      }
+    ],
+    "default": [
+      {
+        "question": "How long does a typical build take?",
+        "answer": "Most CMS builds take four to six weeks from kickoff to launch, depending on scope."
+      },
+      {
+        "question": "Do you work with existing HubSpot portals?",
+        "answer": "Yes \u2014 we regularly build inside existing portals, themes and design systems."
+      },
+      {
+        "question": "Can you integrate custom data sources?",
+        "answer": "We use HubDB and the HubSpot API to power dynamic, editor-friendly modules."
+      },
+      {
+        "question": "What happens after launch?",
+        "answer": "Every project includes a 30-day support window plus optional retainer support."
+      }
+    ]
+  }
+]

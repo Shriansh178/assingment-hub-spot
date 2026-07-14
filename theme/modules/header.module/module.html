@@ -1,0 +1,43 @@
+<header class="site-header" data-site-header>
+  <div class="wrap site-header__inner">
+    <a href="{{ module.logo_link.url }}" class="site-header__logo" aria-label="{{ module.logo_alt_text }}">
+      {% if module.logo.src %}
+        <img src="{{ module.logo.src }}" alt="{{ module.logo_alt_text }}" width="{{ module.logo.width }}" height="{{ module.logo.height }}">
+      {% else %}
+        <span class="site-header__logo-text">{{ module.logo_alt_text }}</span>
+      {% endif %}
+    </a>
+
+    <nav class="site-header__nav" data-nav-menu aria-label="Primary">
+      <ul class="site-header__menu">
+        {% for item in module.menu_items %}
+          <li class="site-header__menu-item{% if item.submenu %} has-submenu{% endif %}"{% if item.submenu %} data-has-submenu{% endif %}>
+            <a href="{{ item.link.url }}" {% if item.submenu %}data-submenu-trigger{% endif %}>
+              {{ item.nav_label }}
+              {% if item.submenu %}
+                <svg class="site-header__caret" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                  <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              {% endif %}
+            </a>
+            {% if item.submenu %}
+              <ul class="site-header__submenu">
+                {% for sub in item.submenu %}
+                  <li><a href="{{ sub.link.url }}">{{ sub.nav_label }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% if module.cta_label %}
+        <a href="{{ module.cta_link.url }}" class="btn btn--primary site-header__cta">{{ module.cta_label }}</a>
+      {% endif %}
+    </nav>
+
+    <button class="site-header__toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,163 @@
+[
+  {
+    "id": "d553e0cf-1b4b-462a-8eca-f1a2b0ac43e0",
+    "name": "logo",
+    "label": "Footer logo",
+    "required": false,
+    "locked": false,
+    "type": "image",
+    "inline_help_text": "",
+    "help_text": "",
+    "responsive": true,
+    "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": "",
+      "loading": "lazy",
+      "width": null,
+      "height": null,
+      "max_width": null,
+      "max_height": null
+    }
+  },
+  {
+    "id": "d8a16dcf-8861-48cd-82e6-9e06f707ed29",
+    "name": "logo_alt_text",
+    "label": "Logo fallback text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Setu Agency"
+  },
+  {
+    "id": "c153a006-e7bc-4cf6-83e2-886095e6c6d5",
+    "name": "tagline",
+    "label": "Tagline",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "A digital agency building premium web experiences on HubSpot CMS."
+  },
+  {
+    "id": "d7427993-7d68-44bb-9dba-e28c1191419f",
+    "name": "quick_links",
+    "label": "Quick links",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 8,
+      "default": 4,
+      "sorting_label_field": null
+    },
+    "inline_help_text": "",
+    "help_text": "",
+    "children": [
+      {
+        "id": "0fd3514b-9d49-4dd4-9a8a-9c019075666c",
+        "name": "nav_label",
+        "label": "Label",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Link"
+      },
+      {
+        "id": "73ea5b9b-3af0-419b-adb9-8ad5b5d54581",
+        "name": "link",
+        "label": "Link",
+        "required": false,
+        "locked": false,
+        "type": "url",
+        "inline_help_text": "",
+        "help_text": ""
+      }
+    ],
+    "default": [
+      {
+        "nav_label": "Services"
+      },
+      {
+        "nav_label": "Work"
+      },
+      {
+        "nav_label": "About"
+      },
+      {
+        "nav_label": "Contact"
+      }
+    ]
+  },
+  {
+    "id": "a5b67d94-a16e-45ba-9161-62e87c8c064f",
+    "name": "email",
+    "label": "Email",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "hello@setuagency.com"
+  },
+  {
+    "id": "0eea7439-21ae-4365-acd0-8b157b767bc5",
+    "name": "phone",
+    "label": "Phone",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "+91 98000 00000"
+  },
+  {
+    "id": "3776e45f-9302-442e-88a9-f383d6b1b1bc",
+    "name": "address",
+    "label": "Address",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "New Delhi, India"
+  },
+  {
+    "id": "3377c5ce-a549-4702-890e-6c589f6f75ba",
+    "name": "company_name",
+    "label": "Company name (for copyright line)",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Setu Agency"
+  }
+]

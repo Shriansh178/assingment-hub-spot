@@ -1,0 +1,11 @@
+<section class="parallax" style="background-image: url('{{ module.background_image.src }}');">
+  <div class="parallax__overlay"></div>
+  <div class="wrap parallax__content" data-aos="fade-up">
+    <span class="eyebrow">{{ module.eyebrow }}</span>
+    <h2>{{ module.heading }}</h2>
+    <p>{{ module.description }}</p>
+    {% if module.cta_label %}
+      <a href="{{ module.cta_link.url }}" class="btn btn--ghost">{{ module.cta_label }}</a>
+    {% endif %}
+  </div>
+</section>

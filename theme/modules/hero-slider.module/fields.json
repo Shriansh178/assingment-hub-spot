@@ -1,0 +1,133 @@
+[
+  {
+    "id": "925419d6-5bf5-4840-9aad-3f9e3fded7ac",
+    "name": "slides",
+    "label": "Slides",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": {
+      "min": 4,
+      "max": 8,
+      "default": 4,
+      "sorting_label_field": null
+    },
+    "inline_help_text": "",
+    "help_text": "",
+    "children": [
+      {
+        "id": "d56ef2cd-d40f-4345-ad90-16c8456786f2",
+        "name": "background_image",
+        "label": "Background image",
+        "required": false,
+        "locked": false,
+        "type": "image",
+        "inline_help_text": "",
+        "help_text": "",
+        "responsive": true,
+        "default": {
+          "size_type": "auto",
+          "src": "",
+          "alt": "",
+          "loading": "lazy",
+          "width": null,
+          "height": null,
+          "max_width": null,
+          "max_height": null
+        }
+      },
+      {
+        "id": "35ec97b2-cd87-42ad-91f5-4a38f4e77f89",
+        "name": "eyebrow",
+        "label": "Eyebrow label",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Setu Agency"
+      },
+      {
+        "id": "9b168996-0eb2-4a37-a4e8-10caffb3fa2e",
+        "name": "heading",
+        "label": "Heading",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Design that moves your business forward"
+      },
+      {
+        "id": "b0982124-81d5-40f0-a364-7be1bf72db62",
+        "name": "description",
+        "label": "Description",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "A short supporting line for this slide."
+      },
+      {
+        "id": "ad7ffab8-ec07-4bcc-8542-c550a61b9104",
+        "name": "cta_label",
+        "label": "CTA label",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Explore work"
+      },
+      {
+        "id": "877b5c7a-36e6-4ebb-94ba-c82358ea15c7",
+        "name": "cta_link",
+        "label": "CTA link",
+        "required": false,
+        "locked": false,
+        "type": "url",
+        "inline_help_text": "",
+        "help_text": ""
+      }
+    ],
+    "default": [
+      {
+        "eyebrow": "Digital Agency",
+        "heading": "Design that moves your business forward",
+        "description": "We build premium digital experiences for ambitious brands.",
+        "cta_label": "Explore work"
+      },
+      {
+        "eyebrow": "Strategy",
+        "heading": "Websites built to convert, not just look good",
+        "description": "Every pixel is tied to a business outcome.",
+        "cta_label": "See services"
+      },
+      {
+        "eyebrow": "Engineering",
+        "heading": "HubSpot CMS builds done right",
+        "description": "Fast, flexible, editor-friendly modules.",
+        "cta_label": "Our process"
+      },
+      {
+        "eyebrow": "Results",
+        "heading": "Trusted by growing teams",
+        "description": "50+ launches across industries and geographies.",
+        "cta_label": "View case studies"
+      }
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "b7c235d8-118f-4f0d-b4ff-bc1cafed9cb7",
+    "name": "eyebrow",
+    "label": "Eyebrow label",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Why teams choose us"
+  },
+  {
+    "id": "fba2a62a-2797-4c7c-96d7-d2e0f60e4eb2",
+    "name": "heading",
+    "label": "Heading",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Built for teams who care about detail"
+  },
+  {
+    "id": "90250bb9-bc60-42bd-b16d-dabcd1cb4f0b",
+    "name": "cards",
+    "label": "Cards",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "default": 3,
+      "sorting_label_field": null
+    },
+    "inline_help_text": "",
+    "help_text": "",
+    "children": [
+      {
+        "id": "373c8e6d-de8c-4a52-afcc-fcd2b10b155e",
+        "name": "icon",
+        "label": "Icon",
+        "required": false,
+        "locked": false,
+        "type": "image",
+        "inline_help_text": "",
+        "help_text": "",
+        "responsive": true,
+        "default": {
+          "size_type": "auto",
+          "src": "",
+          "alt": "",
+          "loading": "lazy",
+          "width": null,
+          "height": null,
+          "max_width": null,
+          "max_height": null
+        }
+      },
+      {
+        "id": "c697580a-6d30-4cd8-81ea-755e98f78d42",
+        "name": "title",
+        "label": "Title",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Card title"
+      },
+      {
+        "id": "0348614c-aa71-4c1e-844d-cab6166f37df",
+        "name": "short_description",
+        "label": "Short description",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "One-line summary shown on the card."
+      },
+      {
+        "id": "f8d5befd-4296-42d4-9d66-a7ca4c08cac1",
+        "name": "full_description",
+        "label": "Full description (shown in popup)",
+        "required": false,
+        "locked": false,
+        "type": "richtext",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Full detail shown inside the modal popup."
+      }
+    ],
+    "default": [
+      {
+        "title": "Senior team, no hand-offs",
+        "short_description": "You work directly with the people building your site."
+      },
+      {
+        "title": "Fixed scope, fixed price",
+        "short_description": "No surprise change orders mid-project."
+      },
+      {
+        "title": "Post-launch support",
+        "short_description": "30 days of support included with every build."
+      }
+    ]
+  }
+]

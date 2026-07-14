@@ -1,0 +1,101 @@
+.feature-cards { padding: 120px 0; }
+
+.feature-cards__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.feature-card {
+  position: relative;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: 36px 32px 32px;
+  transition: box-shadow 0.35s var(--ease-out), transform 0.35s var(--ease-out), border-color 0.35s ease;
+}
+.feature-card:hover {
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-4px);
+  border-color: transparent;
+}
+
+.feature-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--color-brand-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.feature-card__icon img { width: 24px; height: 24px; }
+
+.feature-card h3 { font-size: 19px; margin-bottom: 8px; }
+.feature-card p { font-size: 14.5px; margin-bottom: 0; padding-right: 30px; }
+
+.feature-card__plus {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-line);
+  background: #fff;
+  color: var(--color-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s var(--ease-out);
+}
+.feature-card__plus:hover {
+  background: var(--color-ink);
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(11, 13, 18, 0.55);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s var(--ease-out), visibility 0.3s;
+}
+.modal.is-visible { opacity: 1; visibility: visible; }
+
+.modal__panel {
+  position: relative;
+  background: #fff;
+  border-radius: var(--radius-md);
+  max-width: 480px;
+  width: 100%;
+  padding: 44px 36px;
+  transform: translateY(16px) scale(0.98);
+  transition: transform 0.35s var(--ease-out);
+}
+.modal.is-visible .modal__panel { transform: translateY(0) scale(1); }
+
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--color-ink-soft);
+}
+
+@media (max-width: 900px) {
+  .feature-cards__grid { grid-template-columns: 1fr; }
+  .feature-cards { padding: 80px 0; }
+}

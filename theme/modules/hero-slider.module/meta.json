@@ -1,0 +1,12 @@
+{
+  "label": "Hero Banner Slider",
+  "css_assets": [],
+  "js_assets": [],
+  "global": false,
+  "help_text": "Fullscreen Swiper hero with fade transition, autoplay, pagination and arrows.",
+  "host_template_types": [
+    "PAGE"
+  ],
+  "icon": "image",
+  "is_available_for_new_content": true
+}

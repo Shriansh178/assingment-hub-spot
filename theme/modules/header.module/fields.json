@@ -1,0 +1,181 @@
+[
+  {
+    "id": "e4d8d8e0-558a-4892-a274-580837498715",
+    "name": "logo",
+    "label": "Logo image",
+    "required": false,
+    "locked": false,
+    "type": "image",
+    "inline_help_text": "",
+    "help_text": "",
+    "responsive": true,
+    "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": "",
+      "loading": "lazy",
+      "width": null,
+      "height": null,
+      "max_width": null,
+      "max_height": null
+    }
+  },
+  {
+    "id": "a4cf4c34-730d-45cb-a6c7-81c75159c215",
+    "name": "logo_alt_text",
+    "label": "Logo alt text / fallback text",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Setu Agency"
+  },
+  {
+    "id": "5d8ee859-d153-4dce-a573-43882ee73067",
+    "name": "logo_link",
+    "label": "Logo link",
+    "required": false,
+    "locked": false,
+    "type": "url",
+    "inline_help_text": "",
+    "help_text": ""
+  },
+  {
+    "id": "c51f9edb-4f75-4d6c-8be9-5e3f9d8a4783",
+    "name": "menu_items",
+    "label": "Menu items",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "default": 4,
+      "sorting_label_field": null
+    },
+    "inline_help_text": "",
+    "help_text": "",
+    "children": [
+      {
+        "id": "d0dca922-236f-43bd-a235-3ab77ee0c7a0",
+        "name": "nav_label",
+        "label": "Label",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "Menu item"
+      },
+      {
+        "id": "13d95d98-2f72-428f-aa26-49baf0f31970",
+        "name": "link",
+        "label": "Link",
+        "required": false,
+        "locked": false,
+        "type": "url",
+        "inline_help_text": "",
+        "help_text": ""
+      },
+      {
+        "id": "273ba01c-0ba8-4cc7-932a-1a2de36d02e6",
+        "name": "submenu",
+        "label": "Submenu items",
+        "required": false,
+        "locked": false,
+        "type": "group",
+        "occurrence": {
+          "min": 0,
+          "max": 6,
+          "default": 0,
+          "sorting_label_field": null
+        },
+        "inline_help_text": "",
+        "help_text": "",
+        "children": [
+          {
+            "id": "c6ab7257-e767-46f3-b495-3f15f774233c",
+            "name": "nav_label",
+            "label": "Label",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "text",
+            "inline_help_text": "",
+            "help_text": "",
+            "default": "Submenu item"
+          },
+          {
+            "id": "c16c2dfb-545e-4003-b653-7f08bac68485",
+            "name": "link",
+            "label": "Link",
+            "required": false,
+            "locked": false,
+            "type": "url",
+            "inline_help_text": "",
+            "help_text": ""
+          }
+        ],
+        "default": []
+      }
+    ],
+    "default": [
+      {
+        "nav_label": "Product",
+        "submenu": [
+          {
+            "nav_label": "Overview"
+          },
+          {
+            "nav_label": "Integrations"
+          }
+        ]
+      },
+      {
+        "nav_label": "Services",
+        "submenu": []
+      },
+      {
+        "nav_label": "Work",
+        "submenu": []
+      },
+      {
+        "nav_label": "Company",
+        "submenu": []
+      }
+    ]
+  },
+  {
+    "id": "611652c4-1308-4dd1-ae95-6b90403b3c4c",
+    "name": "cta_label",
+    "label": "CTA button label",
+    "required": false,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "inline_help_text": "",
+    "help_text": "",
+    "default": "Get in touch"
+  },
+  {
+    "id": "76d34d17-9d36-40a9-bb78-5e355d1c32eb",
+    "name": "cta_link",
+    "label": "CTA button link",
+    "required": false,
+    "locked": false,
+    "type": "url",
+    "inline_help_text": "",
+    "help_text": ""
+  }
+]

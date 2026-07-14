@@ -1,0 +1,60 @@
+{#
+  templateType: page
+  isAvailableForNewContent: true
+  label: Home — Agency Landing Page
+#}
+<!doctype html>
+<html lang="en">
+<head>
+  {{ standard_header_includes }}
+  <title>{{ page_meta.html_title }}</title>
+  <meta name="description" content="{{ page_meta.meta_description }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <link rel="stylesheet" href="{{ get_asset_url('../css/main.css') }}">
+  <link rel="stylesheet" href="{{ get_asset_url('../modules/header.module/module.css') }}">
+  <link rel="stylesheet" href="{{ get_asset_url('../modules/hero-slider.module/module.css') }}">
+  <link rel="stylesheet" href="{{ get_asset_url('../modules/services-3col.module/module.css') }}">
+  <link rel="stylesheet" href="{{ get_asset_url('../modules/parallax.module/module.css') }}">
+  <link rel="stylesheet" href="{{ get_asset_url('../modules/popup-cards.module/module.css') }}">
+  <link rel="stylesheet" href="{{ get_asset_url('../modules/accordion.module/module.css') }}">
+  <link rel="stylesheet" href="{{ get_asset_url('../modules/testimonial-slider.module/module.css') }}">
+  <link rel="stylesheet" href="{{ get_asset_url('../modules/tabs.module/module.css') }}">
+  <link rel="stylesheet" href="{{ get_asset_url('../modules/footer.module/module.css') }}">
+</head>
+<body>
+
+  {% module "header" path="../modules/header.module", label="Site Header" %}
+
+  <main>
+    {% module "hero" path="../modules/hero-slider.module", label="Hero Banner Slider" %}
+
+    {% module "services" path="../modules/services-3col.module", label="Services (HubDB)" %}
+
+    {% module "parallax" path="../modules/parallax.module", label="Parallax Statement" %}
+
+    {% module "feature_cards" path="../modules/popup-cards.module", label="Feature Cards with Popup" %}
+
+    {% module "accordion" path="../modules/accordion.module", label="Accordion" %}
+
+    {% module "testimonials" path="../modules/testimonial-slider.module", label="Testimonial Slider" %}
+
+    {% module "tabs" path="../modules/tabs.module", label="Process Tabs" %}
+  </main>
+
+  {% module "footer" path="../modules/footer.module", label="Site Footer" %}
+
+  {{ standard_footer_includes }}
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="{{ get_asset_url('../js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "label": "Site Footer",
+  "css_assets": [],
+  "js_assets": [],
+  "global": false,
+  "help_text": "Footer with logo, quick links, contact details and copyright.",
+  "host_template_types": [
+    "PAGE",
+    "BLOG_LISTING",
+    "BLOG_POST"
+  ],
+  "icon": "layout",
+  "is_available_for_new_content": true
+}

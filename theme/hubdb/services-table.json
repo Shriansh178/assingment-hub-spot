@@ -1,0 +1,23 @@
+{
+  "name": "services",
+  "label": "Services",
+  "useForPages": false,
+  "allowChildTables": false,
+  "columns": [
+    { "name": "title", "label": "Title", "type": "TEXT" },
+    { "name": "image", "label": "Image", "type": "IMAGE" },
+    { "name": "description", "label": "Description", "type": "RICHTEXT" },
+    {
+      "name": "category",
+      "label": "Category",
+      "type": "SELECT",
+      "options": [
+        { "name": "strategy", "label": "Strategy", "order": 1 },
+        { "name": "design", "label": "Design", "order": 2 },
+        { "name": "development", "label": "Development", "order": 3 },
+        { "name": "growth", "label": "Growth", "order": 4 }
+      ]
+    }
+  ],
+  "_comment": "Import via HubDB > Create table, or push with the HubSpot CLI: hs hubdb create hubdb/services-table.json. Row order (column 1 orderby) drives display order in modules/services-3col."
+}

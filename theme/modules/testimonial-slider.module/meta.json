@@ -1,0 +1,12 @@
+{
+  "label": "Testimonial Slider",
+  "css_assets": [],
+  "js_assets": [],
+  "global": false,
+  "help_text": "Swiper testimonial slider with custom SVG arrows and pagination.",
+  "host_template_types": [
+    "PAGE"
+  ],
+  "icon": "quote",
+  "is_available_for_new_content": true
+}
